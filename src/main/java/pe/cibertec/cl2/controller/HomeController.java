@@ -12,4 +12,8 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/userdetails")
+    public String userdetails(Model model){
+        return "usuario-detalle";
+    }
 }

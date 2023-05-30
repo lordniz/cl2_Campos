@@ -22,8 +22,4 @@ public class Especialidad {
     @Column(name = "nombre")
     private String nombre;
 
-    // Otros campos relacionados con la especialidad
-
-    @OneToMany(mappedBy = "especialidad")
-    private Set<Alumno> alumnos;
 }

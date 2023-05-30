@@ -29,6 +29,7 @@ public class SecurityConfig {
                         "/auth/guardarUsuario",
                         "/resources/**",
                         "/static/**",
+                        "/assets/**",
                         "/styles/**",
                         "/scripts/**")
                 .permitAll()

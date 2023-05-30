@@ -19,12 +19,16 @@ public class Alumno {
 
     @Column(name = "nombre")
     private String nombre;
-
+    @Column(name = "apellido")
+    private String apellido;
+    @Column(name = "dni")
+    private String dni;
+    @Column(name = "correo")
+    private String correo;
+    @Column(name = "celular")
+    private String celular;
     @ManyToOne
     @JoinColumn(name = "idespecialidad")
     private Especialidad especialidad;
 
-    @ManyToOne
-    @JoinColumn(name = "idusuario")
-    private Usuario usuario;
 }
